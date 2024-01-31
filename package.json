@@ -1,0 +1,37 @@
+{
+  "name": "@data-fair/processing-meteo",
+  "version": "0.2.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/data-fair/processing-meteo.git"
+  },
+  "keywords": [
+    "data-fair-processings-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/data-fair/processing-meteo/issues"
+  },
+  "homepage": "https://github.com/data-fair/processing-meteo#readme",
+  "devDependencies": {
+    "@data-fair/processings-test-utils": "^0.5.2",
+    "config": "^3.3.9",
+    "mocha": "^10.2.0",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs-extra": "^11.2.0",
+    "gunzip-file": "^0.1.1",
+    "pump": "^3.0.0"
+  }
+}
