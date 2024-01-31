@@ -20,5 +20,5 @@ exports.run = async ({ pluginConfig, processingConfig, processingId, tmpDir, axi
     await log.info(`Le jeu de donnée existe, id="${dataset.id}", title="${dataset.title}"`)
   }
 
-  await process(pluginConfig.apiAccessToken, processingConfig, tmpDir, axios, log)
+  await process(pluginConfig.apiAccessToken, processingConfig, tmpDir, axios, log, dataset)
 }
