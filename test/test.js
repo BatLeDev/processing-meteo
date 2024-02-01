@@ -14,6 +14,9 @@ describe('test', function () {
       processingConfig: {
         datasetMode: 'create',
         dataset: { title: 'Meteo Test' },
+        years: [2023, 2024],
+        departements: ['56'],
+        frequency: 3,
         clearFiles: false
       },
       tmpDir: 'data'

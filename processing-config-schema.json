@@ -74,6 +74,38 @@
     {
       "title": "Paramètres",
       "properties": {
+        "departements": {
+          "type": "array",
+          "title": "Départements",
+          "description": "Départements à extraire, laisser vide pour extraire tous les départements",
+          "items": {
+            "type": "string"
+          }        
+        },
+        "years": {
+          "type": "array",
+          "title": "Années",
+          "description": "Années à extraire, laisser vide pour extraire toutes les années",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "frequency": {
+          "type": "integer",
+          "title": "Fréquence horaire",
+          "description": "Le nombre d'heures entre chaque mesure",
+          "enum": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            8,
+            12,
+            24
+          ],
+          "default": 1
+        },
         "clearFiles": {
           "type": "boolean",
           "title": "Supprimer les fichiers temporaires",
